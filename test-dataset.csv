@@ -1,0 +1,93 @@
+﻿ID,Date,DateType,Age,Sex,Race,ResidenceCity,ResidenceCounty,ResidenceState,DeathCity,DeathCounty,Location,LocationifOther,DescriptionofInjury,InjuryPlace,InjuryCity,InjuryCounty,InjuryState,COD,OtherSignifican,Heroin,Cocaine,Fentanyl,FentanylAnalogue,Oxycodone,Oxymorphone,Ethanol,Hydrocodone,Benzodiazepine,Methadone,Amphet,Tramad,Morphine_NotHeroin,Hydromorphone,Other,OpiateNOS,AnyOpioid,MannerofDeath,DeathCityGeo,ResidenceCityGeo,InjuryCityGeo
+14-0273,6/28/14 0:00,DateReported,,,,,,,MIDDLETOWN,,,,substance,,,,,"Acute fent, hydrocod, benzodiazepine",,,,Y,,,,,Y,Y,,,,,,,,,Accident,"CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)"
+13-0102,3/21/13 0:00,DateofDeath,48,Male,Black,NORWALK,,,NORWALK,FAIRFIELD,Hospital,,,,,,,Cocaine Intoxication,,,Y,,,,,,,,,,,,,,,,Accident,"Norwalk, CT
+(41.11805, -73.412906)","NORWALK, CT
+(41.11805, -73.412906)","CT
+(41.575155, -72.738288)"
+16-0165,3/13/16 0:00,DateofDeath,30,Female,White,SANDY HOOK,FAIRFIELD,CT,DANBURY,,Hospital,,Substance Abuse,Unknown,UNKNOWN,,,Acute Heroin and Cocaine Intoxication,,Y,Y,,,,,,,,,,,,,,,Y,Accident,"Danbury, CT
+(41.393666, -73.451539)","SANDY HOOK, CT
+(41.419998, -73.282501)",
+16-0208,3/31/16 0:00,DateofDeath,23,Male,White,RYE,WESTCHESTER,NY,GREENWICH,,Hospital,,substance abuse,Residence,RYE,,,Acute Fentanyl and Morphine Intoxication,,Y,,Y,,,,,,,,,,,,,,Y,Accident,"Greenwich, CT
+(41.026526, -73.628549)",,
+13-0052,2/13/13 0:00,DateofDeath,22,Male,"Asian, Other",FLUSHING,QUEENS,,GREENWICH,FAIRFIELD,Hospital,,Transdermal Absorption,Other,,,,Fentanyl Intoxication,,,,Y,,,,,,,,,,,,,,,Accident,"Greenwich, CT
+(41.026526, -73.628549)",,"CT
+(41.575155, -72.738288)"
+14-0277,6/29/14 0:00,DateofDeath,23,Male,White,BRISTOL,,,BRISTOL,HARTFORD,Residence,,Inhalation,Residence,,,,Heroin Intoxication,,Y,,,,,,,,,,,,,,,,,Accident,"BRISTOL, CT
+(41.673037, -72.945791)","BRISTOL, CT
+(41.673037, -72.945791)","CT
+(41.575155, -72.738288)"
+12-0205,8/12/12 0:00,DateofDeath,21,Female,White,WEST HARTFORD,HARTFORD,,WEST HARTFORD,HARTFORD,Residence,,Used Heroin,Residence,,,,Heroin Toxicity,,Y,,,,,,,,,,,,,,,,,Accident,"WEST HARTFORD, CT
+(41.762008, -72.741807)","WEST HARTFORD, CT
+(41.762008, -72.741807)","CT
+(41.575155, -72.738288)"
+13-0404,11/10/13 0:00,DateofDeath,40,Female,White,HAMDEN,NEW HAVEN,,NEW HAVEN,NEW HAVEN,Hospital,,,,,,,Complications of Cocaine Intoxication,,,Y,,,,,,,,,,,,,,,,Accident,"New Haven, CT
+(41.308252, -72.924161)","HAMDEN, CT
+(41.382918, -72.907743)","CT
+(41.575155, -72.738288)"
+12-0107,4/25/12 0:00,DateofDeath,40,Male,White,EAST HARTFORD,HARTFORD,,EAST HARTFORD,HARTFORD,Residence,,Used Heroin,Residence,,,,Heroin Toxicity,,Y,,,,,,,,,,,,,,,,,Accident,"EAST HARTFORD, CT
+(41.769319, -72.643785)","EAST HARTFORD, CT
+(41.769319, -72.643785)","CT
+(41.575155, -72.738288)"
+13-0161,5/15/13 0:00,DateofDeath,50,Male,White,MONTVILLE,NEW LONDON,,MONTVILLE,NEW LONDON,Residence,,Ingestion,Residence,,,,Oxycodone Intoxication,,,,,,Y,,,,,,,,,,,,,Accident,"MONTVILLE, CT
+(41.45303, -72.136336)","MONTVILLE, CT
+(41.45303, -72.136336)","CT
+(41.575155, -72.738288)"
+12-0218,8/23/12 0:00,DateofDeath,26,Female,"Hispanic, White",,,,STRATFORD,FAIRFIELD,Other,Honey Spot,Injection/Inhalation,Hotel or Motel,,,,Multiple Drug Toxicity,,Y,Y,,,,,,,,,,,,,,,,Accident,"STRATFORD, CT
+(41.200888, -73.131323)","CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)"
+15-0334,7/5/15 0:00,DateReported,49,Female,White,,,,NEW HAVEN,NEW HAVEN,Hospital,,,Unknown,,,,Acute intoxication from the combined effects of heroin and methadone,,Y,,,,,,,,,Y,,,,,,,Y,Accident,"New Haven, CT
+(41.308252, -72.924161)","CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)"
+15-0728,,,,,,,,,MIDDLETOWN,,,,,Unknown,,,,Ruptured Aneurysm of right Iliac Artery with Hemoperitoneum,Acute Cocaine,,Y,,,,,,,,,,,,,,,,Accident,"CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)","CT
+(41.575155, -72.738288)"
+15-0232,5/14/15 0:00,DateReported,50,Male,White,DANBURY,FAIRFIELD,CT,DANBURY,FAIRFIELD,Residence,,,Residence,,,,Heroin Intoxication,,Y,,,,,,,,,,,,,,,,Y,Accident,"DANBURY, CT
+(41.393666, -73.451539)","DANBURY, CT
+(41.393666, -73.451539)","CT
+(41.575155, -72.738288)"
+16-0028,1/13/16 0:00,DateofDeath,29,Male,Black,NEW HAVEN,NEW HAVEN,CT,NEW HAVEN,,Residence,,Substance Abuse,Residence,NEW HAVEN,,,"Acute Heroin Intoxication in a Person Taking Clonazepam, Amphetamine, Citalopram, and Aripiprazole",,Y,,,,,,,,Y,,Y,,,,,,Y,Accident,"NEW HAVEN, CT
+(41.308252, -72.924161)","NEW HAVEN, CT
+(41.308252, -72.924161)","NEW HAVEN, CT
+(41.308252, -72.924161)"
+13-0279,8/19/13 0:00,DateofDeath,45,Male,White,HARTFORD,HARTFORD,,HARTFORD,HARTFORD,Residence,,Ingestion,Residence,,,,Methadone Intoxication,,,,,,,,,,,Y,,,,,,,,Accident,"HARTFORD, CT
+(41.765775, -72.673356)","HARTFORD, CT
+(41.765775, -72.673356)","CT
+(41.575155, -72.738288)"
+14-0042,1/29/14 0:00,DateofDeath,29,Female,White,CANTERBURY,,,HARTFORD,,Hospital,,Substance Abuse,Unknown,,,,"Acute intoxication due to the combined effects of heroin, Citalopram and Clonazepam",,Y,,,,,,,,Y,,,,,,,,,Accident,"Hartford, CT
+(41.765775, -72.673356)","CANTERBURY, CT
+(41.698351, -71.971118)","CT
+(41.575155, -72.738288)"
+12-0060,3/2/12 0:00,DateofDeath,42,Male,White,WALLINGFORD,NEW HAVEN,,WALLINGFORD,NEW HAVEN,Residence,,Ingestion,Residence,,,,Ethanol and Oxymorphone Toxicity,,,,,,,Y,Y,,,,,,,,,,,Accident,"WALLINGFORD, CT
+(41.454408, -72.818414)","WALLINGFORD, CT
+(41.454408, -72.818414)","CT
+(41.575155, -72.738288)"
+16-0065,1/30/16 0:00,DateofDeath,54,Male,White,MIDDLETOWN,MIDDLESEX,CT,MIDDLETOWN,,Residence,,Substance Abuse Including Injection of Heroin,Residence,MIDDLETOWN,,,"Acute Heroin Intoxication While Using Alcohol, Trazodone, Bupropion and Abilify",,Y,,,,,,Y,,,,,,,,,,Y,Accident,"MIDDLETOWN, CT
+(41.544654, -72.651713)","MIDDLETOWN, CT
+(41.544654, -72.651713)","MIDDLETOWN, CT
+(41.544654, -72.651713)"
+16-0889,12/20/16 0:00,DateofDeath,32,Male,White,WINDHAM,WINDHAM,CT,WINDHAM,,Residence,,,,WINDHAM,,,"Acute Intoxication due to the Combined Effects of Fentanyl, Heroin, Clonazepam and Nordiazepam",,Y,,Y,,,,,,Y,,,,,,,,Y,Accident,"Windham, CT
+(41.699744, -72.157703)","WINDHAM, CT
+(41.699744, -72.157703)","WINDHAM, CT
+(41.699744, -72.157703)"
+14-0474,11/14/14 0:00,DateofDeath,47,Male,White,BRIDGEPORT,,,BRIDGEPORT,FAIRFIELD,Residence,,substance abuse,Residence,,,,Acute intoxication due to the combined effects of heroin and alcohol,,Y,,,,,,Y,,,,,,,,,,,Accident,"BRIDGEPORT, CT
+(41.179195, -73.189476)","BRIDGEPORT, CT
+(41.179195, -73.189476)","CT
+(41.575155, -72.738288)"
+15-0263,6/2/15 0:00,DateReported,39,Female,White,ANSONIA,NEW HAVEN,CT,DERBY,NEW HAVEN,Hospital,,,Residence,ANSONIA,NEW HAVEN,CT,Intoxication due to the Combined Effects of Methadone and Diphenhydramine,,,,,,,,,,,Y,,,,,,,Y,Accident,"Derby, CT
+(41.322959, -73.089594)","ANSONIA, CT
+(41.34198, -73.078296)","ANSONIA, CT
+(41.34198, -73.078296)"
+14-0188,5/2/14 0:00,DateofDeath,27,Male,,HAMDEN,,,NEW HAVEN,NEW HAVEN,Hospital,,Ingestion,Residence,,,,"Intoxication due to the combined effects of Oxycodone, Oxymorphone, Clonazepam, and Alprazolam",,,,,,Y,Y,,,Y,,,,,,,,,Accident,"New Haven, CT
+(41.308252, -72.924161)","HAMDEN, CT
+(41.382918, -72.907743)","CT
+(41.575155, -72.738288)"
+16-0688,10/7/16 0:00,DateofDeath,34,Male,White,COS COB,FAIRFIELD,CT,COS COB,,Residence,,Substance Abuse,Residence,COS COB,,,Acute Intoxication due to the Combined Effects of Fentanyl and Heroin,,Y,,Y,,,,,,,,,,,,,,Y,Accident,"COS COB, CT
+(41.037899, -73.599776)","COS COB, CT
+(41.037899, -73.599776)","COS COB, CT
+(41.037899, -73.599776)"
