@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oracles - CT Dataset</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/uva.png">
+    <!-- Pignose Calender -->
+    <link href="./static/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./static/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./static/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="/static/images/logo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="./static/images/logo-compact.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="static/images/logo-text.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+
+
+
+
+
+
+
+        <div class="content-body">
+
+            <div class="container-fluid mt-2">
+
+                <!--***********************************
+                    Row 1 of content
+                ***********************************-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Opioids</h1>
+                                            <p></p>
+                                            <h4 class="m-0">➤ Potent sedatives used as painkillers</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ CNS depressants</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Rise in use and misuse</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Public health crisis</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">       </h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+
+                                        </div>
+                                        <!--
+                                        <div>
+                                            <ul>
+                                                <li class="d-inline-block mr-3"><a class="text-dark" href="#">Day</a></li>
+                                                <li class="d-inline-block mr-3"><a class="text-dark" href="#">Week</a></li>
+                                                <li class="d-inline-block"><a class="text-dark" href="#">Month</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="chart-wrapper">
+                                        <canvas id="chart_widget_2"></canvas>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="w-100 mr-2">
+                                                <h6>Pixel 2</h6>
+                                                <div class="progress" style="height: 6px">
+                                                    <div class="progress-bar bg-danger" style="width: 40%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-2 w-100">
+                                                <h6>iPhone X</h6>
+                                                <div class="progress" style="height: 6px">
+                                                    <div class="progress-bar bg-primary" style="width: 80%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--***********************************
+                           Row 2 of content
+                ***********************************-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                       <div>
+                                           <h1 class="mb-1">Dataset</h1>
+                                            <p></p>
+                                            <h4 class="m-0">➤ Source: CT Government</h4>
+                                            <p>  </p>
+                                            <h4 class="m-0">➤ Number of accidental overdose deaths</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Demographic information</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Location information</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Multiple years of data</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">       </h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!--***********************************
+                           Row 3 of content
+                ***********************************-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                       <div>
+                                           <h1 class="mb-1">Pre-Processing</h1>
+                                            <p></p>
+                                            <h4 class="m-0">➤ Missing values</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Combined information in cells</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">➤ Formatting the correct data types</h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                            <h4 class="m-0">       </h4>
+                                            <p>              </p>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                       <div>
+                                           <h1 class="mb-1">Unit Testing</h1>
+                                            <p></p>
+                                            <img src="./static/images/testing.png" alt="testing" style="float:right;width:1200px;height:250px;">
+                                            <p>              </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                           <h1 class="mb-1">Initial Steps: Cause of Death Wordcloud</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/cod-wc.png" alt="Wordcloud" style="float:right;width:1280px;height:750px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--***********************************
+                           Row 5 of content (GOALS 1 & 2)
+                ***********************************-->
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card gradient-1">
+                            <div class="card-body">
+                                <h2 class="text-white">Demographics of Drug Deaths</h2>
+                                <div class="d-inline-block">
+                                    
+                                    <h4 class="text-white mb-0">➤ Are certain groups predisposed to use specific drugs?</h4>
+                                    <h4 class="text-white mb-0">➤ Is any group disproportionately affected?</h4>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">{{card_2_title}}</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">$ 8541</h2>
+                                    <p class="text-white mb-0">Jan - March 2019</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card gradient-3">
+                            <div class="card-body">
+                                <h2 class="text-white">Locationwise Drug Use</h2>
+                                <div class="d-inline-block">
+                                    <h4 class="text-white mb-0">➤ Which counties are affected?</h4>
+                                    <h4 class="text-white mb-0">➤ To what degree?</h4>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">{{card_4_title}}</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">99%</h2>
+                                    <p class="text-white mb-0">Jan - March 2019</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                -->
+                </div>
+
+
+                <!--***********************************
+                           Row 5 of content
+                ***********************************-->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card gradient-7">
+                            <div class="card-body">
+                                <h1 class="text-white">Opioids on the rise?</h1>
+                                <div class="d-inline-block">
+                                    <h4 class="text-white mb-0">➤ Opioids as a percentage of overall deaths</h4>
+                                    <h4 class="text-white mb-0">➤ New drugs?                </h4>
+                                    <p>               </p>
+                                    <h4 class="text-white mb-0">                </h4>
+                                    <p>               </p>
+                                    <h4 class="text-white mb-0">                </h4>
+
+
+                                </div>
+                                <p>               </p>
+                            </div>
+                            <p>               </p>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">{{card_2_title}}</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">$ 8541</h2>
+                                    <p class="text-white mb-0">Jan - March 2019</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card gradient-9">
+                            <div class="card-body">
+                                <h2 class="text-white">Predict Overdose Combinations</h2>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"></h2>
+                                    <h4 class="text-white mb-0">➤ Predict the most common combination of drugs leading to fatalities in different areas?</h4>
+                                    <h4 class="text-white mb-0">➤ Based on age? Race?</h4>
+                                    <h4 class="text-white mb-0">➤ Informed approaches to emergency response</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">{{card_4_title}}</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">99%</h2>
+                                    <p class="text-white mb-0">Jan - March 2019</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                -->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Breakdown by Age Groups</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-by-age.jpeg" alt="Deaths By Age Group" style="float:right;width:1200px;height:650px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Breakdown by Race</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-count-race-wise.jpeg" alt="Deaths By Age Group" style="float:right;width:1400px;height:650px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Breakdown by Sex</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-count-against-sex.jpeg" alt="Deaths By Age Group" style="float:right;width:890px;height:650px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-right">
+                                        <div>
+                                            <h1 class="mb-1">Deaths By Race</h1>
+                                            <p> </p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-by-age-race.jpeg" alt="Deaths By Age Group" style="float:right;width:1350px;height:750px;">
+                                            </div>
+                                            <h4 class="m-0"></h4>
+                                            <p>              </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="m-0">Deaths By Location</h1>
+                                            <p>       </p>
+                                            <div>
+                                                <iframe id="inlineFrameExample"
+                                                    title="Inline Frame Example"
+                                                    width="1318"
+                                                    height="650"
+                                                    src="/static/images/photo-counties.html">
+                                                    
+                                            </iframe>
+                                            <p>     </p>
+                                            <p>       </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Total Deaths</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-count-per-drug-over-seven-years-notebook.jpeg" alt="Deaths By Age Group" style="float:right;width:1250px;height:650px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Yearly Breakdown for Each Drug</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/death-count-per-drug-per-year.jpeg" alt="Deaths By Year per Drug" style="float:right;width:1350px;height:650px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="mb-1">Deaths by Drug Class</h1>
+                                            <p></p>
+                                            <h3 class="m-0"></h3>
+                                            <div>
+                                                <img src="./static/images/Opioid growth.jpeg" alt="Deaths By Age Group" style="float:right;width:1350px;height:700px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="m-0">Random Forest Classifier</h1>
+                                            <p>       </p>
+                                            <div>
+                                                <div class="d-inline-block">
+                                                <h4 class="text-black mb-0">➤ Random Forest is an ensemble learning method used for classification and regression problems</h4>
+                                                <p>     </p>
+                                                <h4 class="text-black mb-0">➤ It operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees?</h4>
+                                                <p>     </p>
+                                                <h4 class="text-black mb-0">➤ A decision tree is the building block of a random forest and is an intuitive model. We can think of a decision tree as a series of yes/no questions asked about our data eventually leading to a predicted class</h4>
+
+                                            </div>
+                                            <p>  </p>
+                                            <p>       </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h1 class="m-0">Model Results</h1>
+                                            <p>       </p>
+                                            <div>
+                                                <img src="./static/images/results.png" alt="Deaths By Age Group" style="float:right;width:1300px;height:350px;">
+                                                <img src="./static/images/rf train test.png" alt="Deaths By Age Group" style="float:right;width:1300px;height:750px;">
+                                            <!--
+                                                Add content
+
+                                                
+                                            -->
+                                            <p>     </p>
+                                            <p>       </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!--************************
+                    bar chart
+                    **********************-->
+
+                
+                
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img src="./static/images/users/s.jpeg" class="rounded-circle" alt="">
+                                    <h5 class="mt-3 mb-1">Saad Saleem</h5>
+                                    <!--<p class="m-0">Senior Manager</p>-->
+                                    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img src="./static/images/users/v.jpeg" class="rounded-circle" alt="">
+                                    <h5 class="mt-3 mb-1">Vidhi Gupta</h5>
+                                    <!--<p class="m-0">CEO</p>-->
+                                    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img src="./static/images/users/roy.jpeg" class="rounded-circle" alt="">
+                                    <h5 class="mt-3 mb-1">Dibyendu Chowdhury</h5>
+                                    <!--<p class="m-0">Sales Man</p>-->
+                                    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img src="./static/images/users/sne.jpeg" class="rounded-circle" alt="">
+                                    <h5 class="mt-3 mb-1">Sneha Choudhary</h5>
+                                    <!--<p class="m-0">Online Marketer</p>-->
+                                    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+    
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="static/plugins/common/common.min.js"></script>
+    <script src="static/js/custom.min.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/gleek.js"></script>
+    <script src="static/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./static/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./static/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./static/plugins/d3v3/index.js"></script>
+    <script src="./static/plugins/topojson/topojson.min.js"></script>
+    <script src="./static/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./static/plugins/raphael/raphael.min.js"></script>
+    <script src="./static/plugins/morris/morris.min.js"></script>
+
+
+    <!-- Pignose Calender -->
+    <script src="./static/plugins/moment/moment.min.js"></script>
+    <script src="./static/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./static/plugins/chartist/js/chartist.min.js"></script>
+    <script src="./static/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./static/js/dashboard/dashboard-1.js"></script>
+
+
+
+
+
+    <script>
+        var ctx = document.getElementById('morris-bar-chart').getContext('2d');
+        var morris-bar-chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+</script>
+
+</body>
+
+</html>
