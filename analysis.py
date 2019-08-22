@@ -14,8 +14,25 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
+from wordcloud import WordCloud,STOPWORDS
+
+def generate_word_cloud(data, title='wordcloud'):
+    wordcloud = WordCloud(
+                          stopwords=STOPWORDS,
+                          background_color='white',
+                          scale= 3,
+                          random_state = 1
+                         ).generate(str(data)) ## generate wordcloud
+    plt.figure(1, figsize=(20,10))
+    plt.axis('off')
+    plt.imshow(wordcloud)
+    plt.savefig('{}/{}.jpeg'.format(image_path, title)) ## save wordcloud
+    plt.show() ## show image
 
 def drug_usage_analysis(drug_usage_df):
+    
+    generate_word_cloud(drug_usage_df['COD'].dropna(), 'cod-wordcloud') ## wordcloud for cause of death
+    generate_word_cloud(drug_usage_df['DeathCity'].dropna(), 'cities-wordcloud') ## world cloud for cities having drug overdose incidents
         
     drugs = ['Heroin', 'Cocaine', 'Fentanyl', 'FentanylAnalogue', 'Oxycodone', 'Oxymorphone', 'Ethanol', 'Hydrocodone', 'Benzodiazepine', 'Methadone', 'Amphet', 'Tramad', 'Morphine_NotHeroin', 'Hydromorphone', 'OpiateNOS', 'AnyOpioid'] ## Drugs present in the dataset
 
