@@ -13,6 +13,7 @@ import maprenderer
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 from matplotlib import cm
 from wordcloud import WordCloud,STOPWORDS
 
@@ -39,7 +40,10 @@ def drug_usage_analysis(drug_usage_df):
     plot_number_of_deaths_in_past_7_years_per_drug(drug_usage_df, drugs)
     plot_number_of_deaths_per_year_per_drug(drug_usage_df, drugs)
     plot_death_count_by_drug_class_per_year(drug_usage_df, drugs)
-    
+    plot_number_of_deaths_against_sex(drug_usage_df)
+    plot_number_of_deaths_against_race(drug_usage_df)
+    plot_death_by_age(drug_usage_df)
+    plot_death_by_age_race(drug_usage_df)
     
     county_columns = ['DeathCounty', 'DeathCounty_Latitude', 'DeathCounty_Longitude']
     df_per_county = drug_usage_df[county_columns + drugs].groupby(county_columns).sum() ## frame dataframe of deaths per county per drug
@@ -102,6 +106,92 @@ def plot_number_of_deaths_per_year_per_drug(drug_usage_df, drugs):
     ax.set_ylabel("Number of Accidental Deaths", fontsize=14)
     plt.grid(True)
     ax.get_figure().savefig('{}/death-count-per-drug-per-year.jpeg'.format(image_path))
+    plt.show()
+    
+def plot_number_of_deaths_against_sex(drug_usage_df):
+    #Creating pie chart with male/female proportion
+
+    # sum the instances of males and females
+    males = (drug_usage_df['Sex'] == 'Male').sum()
+    females = (drug_usage_df['Sex'] == 'Female').sum()
+    
+    # put them into a list called proportions
+    proportions = [males, females]
+    
+    # Create a pie chart
+    plt.pie(
+        # using proportions
+        proportions,
+        # with the labels being officer names
+        labels = ['Male', 'Female'],
+        # with no shadows
+        shadow = False,
+        # with colors
+        colors = ['green','red'],
+        # with one slide exploded out
+        explode = (0.15 , 0),
+        # with the start angle at 90%
+        startangle = 90,
+        # with the percent listed as a fraction
+        autopct = '%1.1f%%'
+    )
+
+    # View the plot drop above
+    plt.axis('equal')
+    
+    # Set labels
+    plt.title("Sex Proportion")
+    
+    # View the plot
+    plt.tight_layout()
+    plt.savefig('{}/death-count-against-sex.jpeg'.format(image_path))
+    plt.show()
+    
+def plot_number_of_deaths_against_race(drug_usage_df):
+    race_count = drug_usage_df['Race'].value_counts() ## extract number of deaths by race
+    
+    ## create bar plot 
+    plt.figure(figsize=(20,10))
+    sns.barplot(y=race_count.index, x=race_count.values)
+    plt.savefig('{}/death-count-race-wise.jpeg'.format(image_path))
+    plt.show()
+    
+def plot_death_by_age(drug_usage_df):
+    df_new = drug_usage_df.drop([2195]) ## remove row with no age
+    plt.figure(figsize=(20,10))
+    bins = [0, 18, 25, 45, 65, 100] ## age group bins
+    
+    df_new['AgeGroup'] = pd.cut(df_new['Age'], bins) ## add AgeGroup col
+    
+    ## create bar chart age group wise
+    sns.set_style("whitegrid")
+    plt.title('Death Count Associtated with Age Groups', fontsize=30, fontweight='bold', y=1.05,)
+    plt.xlabel('AgeGroup', fontsize=25)
+    plt.ylabel('Count', fontsize=25)
+    ax = sns.countplot(x="AgeGroup", data=df_new, palette="hls")
+    for p in ax.patches:
+        ax.annotate('{}'.format(p.get_height()), (p.get_x()+0.35, p.get_height()+10))
+    plt.savefig('{}/death-by-age.jpeg'.format(image_path))
+    plt.show()
+    
+def plot_death_by_age_race(drug_usage_df):
+    df_new = drug_usage_df.drop([2195]) ## remove row with no age
+    df_new = df_new.rename(index={'Unknown':'Other'})
+    
+    ## create violin plot for number of deaths based on gender and race
+    plt.figure(figsize=(20,10))
+    sns.violinplot(x="Race", y="Age", hue="Sex", data=df_new, palette="Set2", split=True, scale="count", inner="stick")
+    plt.savefig('{}/death-by-age-race.jpeg'.format(image_path))
+    plt.show()
+    
+def plot_age_race(drug_usage_df):
+    df_new = drug_usage_df.drop([2195]) ## remove row with no age
+    df_new = df_new.rename(index={'Unknown':'Other'})
+    ordered_days = df_new.Race.value_counts().index
+    g = sns.FacetGrid(df_new, row="Race", row_order=ordered_days,
+                      height=2, aspect=5,)
+    g.map(sns.distplot, "Age", hist=False, rug=True)
+    plt.savefig('{}/plot-age-race.jpeg'.format(image_path))
     plt.show()
 
 filename = 'dataset-revised.csv'
