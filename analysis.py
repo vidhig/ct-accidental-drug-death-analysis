@@ -81,7 +81,7 @@ def plot_death_count_by_drug_class_per_year(drug_usage_df, drugs):
     plt.bar(drug_usage_df_new.index.tolist(), D, color = 'sandybrown', edgecolor='black', bottom = A + B + C, width = 0.5)
     plt.legend(['Opioids', 'Stimulants', 'Benzodiazepines', 'Alcohol'],loc=2, prop={'size': 8})
     plt.savefig('{}/death-count-by-drug-class.jpeg'.format(image_path))
-    #_=plt.show()
+    =plt.show()
     
 def plot_number_of_deaths_in_past_7_years_per_drug(drug_usage_df, drugs):
     accidents_per_drug = drug_usage_df[drugs].sum()
@@ -94,7 +94,7 @@ def plot_number_of_deaths_in_past_7_years_per_drug(drug_usage_df, drugs):
         y_index = index-0.08
         ax.text(x_index, y_index, str(value), fontweight='bold', fontsize=14)
     ax.get_figure().savefig('{}/death-count-per-drug-over-seven-years.jpeg'.format(image_path))
-    #_=plt.show()
+    plt.show()
     
 def plot_number_of_deaths_per_year_per_drug(drug_usage_df, drugs):
     drug_usage_df['Year'] = drug_usage_df['Date'].dt.year.astype('Int64') ## extract year
