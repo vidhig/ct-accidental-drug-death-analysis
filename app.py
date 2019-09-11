@@ -3,7 +3,9 @@ from flask import Flask
 from flask import request, redirect, url_for, render_template
 #from flask.ext.security import Security, SQLAlchemyUserDatastore, UserMixin, RoleMixin, login_required
 from flask import Markup
-
+from dataprocessing import *
+from maprenderer import *
+from analysis import *
 
 
 app = Flask(__name__)

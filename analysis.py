@@ -39,7 +39,7 @@ def drug_usage_analysis(drug_usage_df):
 
     plot_number_of_deaths_in_past_7_years_per_drug(drug_usage_df, drugs)
     plot_number_of_deaths_per_year_per_drug(drug_usage_df, drugs)
-    plot_death_count_by_drug_class_per_year(drug_usage_df, drugs)
+    #plot_death_count_by_drug_class_per_year(drug_usage_df, drugs)
     plot_number_of_deaths_against_sex(drug_usage_df)
     plot_number_of_deaths_against_race(drug_usage_df)
     plot_death_by_age(drug_usage_df)
@@ -81,7 +81,7 @@ def plot_death_count_by_drug_class_per_year(drug_usage_df, drugs):
     plt.bar(drug_usage_df_new.index.tolist(), D, color = 'sandybrown', edgecolor='black', bottom = A + B + C, width = 0.5)
     plt.legend(['Opioids', 'Stimulants', 'Benzodiazepines', 'Alcohol'],loc=2, prop={'size': 8})
     plt.savefig('{}/death-count-by-drug-class.jpeg'.format(image_path))
-    plt.show()      
+    plt.show()
     
 def plot_number_of_deaths_in_past_7_years_per_drug(drug_usage_df, drugs):
     accidents_per_drug = drug_usage_df[drugs].sum()
